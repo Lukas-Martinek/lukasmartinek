@@ -27,41 +27,20 @@
   }
 
  header {
-    background-color: rgb(202, 202, 202);
-    padding-bottom: 100px;
+    background-image: url(../img/land_pozadi.jpg);
+    padding-bottom: 180px;
+    background-size: cover;
+    padding-top: 10px;
   }
-  .menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: "Unbounded";
-    font-weight: 700;
-    font-size: 21px;
-    padding: 20px 0;
-    width: 80%;
-    margin: 0 auto;
-    max-width: 800px;
-}
+
 
 .menu {
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Unbounded";
-  font-weight: 700;
-  font-size: 21px;
-  padding: 20px 0;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Unbounded";
-  font-weight: 700;
-  font-size: 22px;
+  font-weight: 600;
+  font-size: 27px;
   padding: 23px 0;
   width: 80%;
   margin: 0 auto;
@@ -71,7 +50,7 @@
   display: flex;
   flex: 1;
   justify-content: space-evenly; /* Rovnoměrné rozložení odkazů */
-  gap: 30px;
+  gap: 20px;
 }
 
 .menu a {
@@ -84,18 +63,21 @@
   flex: 0;
   display: flex;
   justify-content: center;
-  padding: 0 80px; /* Stejná mezera jako mezi odkazy */
+  padding: 0 40px; /* Stejná mezera jako mezi odkazy */
 }
 
 .logo img {
   height: 60px;
 }
 h1 {
-  padding-top: 150px;
+  padding-top: 400px;
   color: white;
   font-family: "Unbounded";
   text-transform: uppercase;
   text-align: center;
+  font-size: 66px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 
 }
 .claim {
@@ -103,8 +85,9 @@ h1 {
   font-family: "Unbounded";
   text-transform: uppercase;
   text-align: center;
-  font-size: 29px;
+  font-size: 40px;
   font-weight: 600;
+  margin-top: 10px;
 }
 .button {
   text-align: center;
@@ -112,16 +95,31 @@ h1 {
   font-family: "Unbounded";
   text-transform: uppercase;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   background-color: var(--modra);
   width: 200px;
   margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   border-radius: 15px;
 }
 .button a {
   color: white;
   text-decoration: none;
+}
+h2, h3  {
+  font-family: "Unbounded";
+  text-transform: uppercase;
+  text-align: center;
+  color: #337A8D;
+}
+.tvoreni {
+  font-size: 32px;
+  text-align: center;
+}
+#o_mne p {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 18px;
 }
