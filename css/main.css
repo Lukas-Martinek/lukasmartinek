@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Unbounded:wght@200..900&display=swap');
+:root {
+  --modra: #337A8D; /* modrá barva */
+}
+
 
 .unbounded-font {
     font-family: "Unbounded", sans-serif;
@@ -18,3 +22,106 @@
   html {
     font-family: "DM Sans";
   }
+  body {
+    margin: 0;
+  }
+
+ header {
+    background-color: rgb(202, 202, 202);
+    padding-bottom: 100px;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Unbounded";
+    font-weight: 700;
+    font-size: 21px;
+    padding: 20px 0;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Unbounded";
+  font-weight: 700;
+  font-size: 21px;
+  padding: 20px 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Unbounded";
+  font-weight: 700;
+  font-size: 22px;
+  padding: 23px 0;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.menu_part {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly; /* Rovnoměrné rozložení odkazů */
+  gap: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.logo {
+  flex: 0;
+  display: flex;
+  justify-content: center;
+  padding: 0 80px; /* Stejná mezera jako mezi odkazy */
+}
+
+.logo img {
+  height: 60px;
+}
+h1 {
+  padding-top: 150px;
+  color: white;
+  font-family: "Unbounded";
+  text-transform: uppercase;
+  text-align: center;
+
+}
+.claim {
+  color: white;
+  font-family: "Unbounded";
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 29px;
+  font-weight: 600;
+}
+.button {
+  text-align: center;
+  color: white;
+  font-family: "Unbounded";
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: var(--modra);
+  width: 200px;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 15px;
+}
+.button a {
+  color: white;
+  text-decoration: none;
+}
