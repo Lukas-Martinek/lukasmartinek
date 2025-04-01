@@ -27,7 +27,7 @@
   }
 
  header {
-    background-image: url(../img/land_pozadi.jpg);
+    background-image: url(../img/pozad_2.jpg);
     padding-bottom: 180px;
     background-size: cover;
     padding-top: 10px;
@@ -39,7 +39,7 @@
   align-items: center;
   justify-content: center;
   font-family: "Unbounded";
-  font-weight: 600;
+  font-weight: 500;
   font-size: 27px;
   padding: 23px 0;
   width: 80%;
@@ -70,12 +70,12 @@
   height: 60px;
 }
 h1 {
-  padding-top: 400px;
+  padding-top: 200px;
   color: white;
   font-family: "Unbounded";
   text-transform: uppercase;
   text-align: center;
-  font-size: 66px;
+  font-size: 60px;
   margin-bottom: 0;
   padding-bottom: 0;
 
@@ -85,7 +85,7 @@ h1 {
   font-family: "Unbounded";
   text-transform: uppercase;
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 600;
   margin-top: 10px;
 }
@@ -114,12 +114,308 @@ h2, h3  {
   text-align: center;
   color: #337A8D;
 }
-.tvoreni {
+h2 {
+  font-size: 40px;
+}
+h3 {
   font-size: 32px;
+}
+.tvoreni {
+  font-size: 40px;
   text-align: center;
+  margin-top: 10px;
 }
 #o_mne p {
   max-width: 900px;
   margin: 0 auto;
   font-size: 18px;
+  padding-bottom: 20px;
+}
+#o_mne h2 {
+  font-size: 20px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.vyber {
+  display: flex;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  }
+  .vyber a {
+    width: 100%;
+    color: white;
+    text-decoration: none;
+  }
+.vyber_foto, .vyber_video {
+  height: 600px;
+  background-size: cover;
+  color: white;
+}
+.vyber h3 {
+  color: white;
+  margin: 0;
+  padding-top: 200px;
+  font-size: 40px;
+}
+.vyber_foto h3 {
+  text-align: left;
+  margin-left: 40px;
+}
+.vyber_video h3 {
+  text-align: right;
+  margin-right: 40px;
+}
+
+  
+
+.vyber_foto {
+  background-image: url(../img/bistro/IMG_3548-Enhanced-NR.jpg);
+}
+.vyber_video {
+  background-image: url(../img/bistro/IMG_3548-Enhanced-NR.jpg);
+}
+
+/* CSS */
+.proj_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.proj_card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 500px;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.proj_card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, var(--modra), rgba(0, 0, 0, 0));
+  z-index: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.proj_card:hover::after {
+  opacity: 0.6;
+}
+
+.proj_card * {
+  position: relative;
+  z-index: 2;
+}
+
+.label {
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.proj_card:hover .label {
+  opacity: 1;
+}
+
+.subtext {
+  font-size: 20px;
+  opacity: 0;
+  position: absolute;
+  font-weight: 200;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.proj_card:hover .subtext {
+  opacity: 1;
+}
+
+.proj_image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.proj_card:hover .proj_image {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.proj_image img {
+  width: 170px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.proj_container h3 {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 100px;
+
+}
+.proj_card:hover {
+  transform: scale(1.01);
+}
+
+.contact_form {
+  display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 40px;
+grid-row-gap: 0px;
+max-width: 1100px;
+margin: 0 auto;
+padding-bottom: 50px;
+}
+.contact_form_part {
+  grid-area: 1 / 1 / 4 / 2;
+}
+.contact_form_part 
+{
+   grid-area: 1 / 2 / 4 / 3;
+  text-align: left;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+input, textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: #337A8D solid 3px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+.contact_form_part2 h3 {
+  margin: 0;
+  text-align:  left;
+  text-transform: none;
+  font-size: 50px;
+}
+.contact_form .button {
+  font-size: 15px;
+
+  margin: 0;
+ align-self: flex-end;
+}
+.contact_form p {
+  font-size: 18px;
+}
+footer {
+  background-image: url(../img/footer.jpg);
+  padding-top: 100px;
+  background-size: cover;
+}
+.footer_info img{
+  width: 80px;
+}
+textarea {
+  height: 80px;
+}
+.footer_info {
+  display: grid;
+grid-template-columns: 1fr 2fr 0.1fr 2fr 1fr;
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 5px;
+grid-row-gap: 0px;
+padding-bottom: 60px;
+max-width: 900px;
+margin: 0 auto;
+
+    align-items: center; /* Vertikální zarovnání na střed */
+    justify-content: center; /* Horizontální zarovnání na střed */
+
+}
+.footer_info_1 {
+  grid-area: 1 / 2 / 4 / 3;
+}
+.footer_info_2 {
+  grid-area: 1 / 4 / 3 / 5; 
+  place-self: center;
+}
+.footer_info h3 {
+  color:  white;
+  font-size: 20px;
+  margin: 0;
+  text-align: left;
+}
+.footer_info ul {
+  list-style: none;
+  color: white;
+  padding-left: 0;
+}
+.footer_info a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 17px;
+}
+.footer_info p {
+  margin: 0;
+}
+.copy {
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.row img {
+  object-fit: cover;
+  height: 200px; /* Nastavíme výšku pro lepší srovnání */
+}
+
+.square {
+  width: 200px;
+  aspect-ratio: 1 / 1;
+}
+
+.rect {
+  width: 300px; /* 15:10 odpovídá 3:2 */
+  aspect-ratio: 3 / 2;
 }
