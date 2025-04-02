@@ -1,0 +1,11 @@
+@media screen and (max-width: 940px) {
+    .menu {
+        display: none; /* Schování desktop menu */
+    }
+    .mobile-header {
+        display: flex; /* Zobrazení mobilního headeru */
+    }
+    header {
+        padding-top: 0;
+    }
+}
