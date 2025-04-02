@@ -142,39 +142,85 @@ h3 {
   width: 100%;
   margin-top: 50px;
   margin-bottom: 50px;
-  }
-  .vyber a {
-    width: 100%;
-    color: white;
-    text-decoration: none;
-  }
-.vyber_foto, .vyber_video {
-  height: 600px;
-  background-size: cover;
-  color: white;
-}
-.vyber h3 {
-  color: white;
-  margin: 0;
-  padding-top: 200px;
-  font-size: 40px;
-}
-.vyber_foto h3 {
-  text-align: left;
-  margin-left: 40px;
-}
-.vyber_video h3 {
-  text-align: right;
-  margin-right: 40px;
 }
 
-  
+.vyber a {
+  width: 50%; /* Zajišťuje, že každý blok bude mít 50% šířky */
+  color: white;
+  text-decoration: none;
+}
+
+.vyber_foto, .vyber_video {
+  position: relative;
+  height: 600px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Aby se neobjevily posuvníky při zvětšení videa */
+  transition: all 0.3s ease-in-out; /* Plynulý přechod pro hover */
+}
 
 .vyber_foto {
   background-image: url(../img/bistro/IMG_3548-Enhanced-NR.jpg);
+  background-size: cover;
+  filter: grayscale(100%); /* Fotka bude černobílá */
 }
-.vyber_video {
-  background-image: url(../img/bistro/IMG_3548-Enhanced-NR.jpg);
+
+.vyber_video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0; /* Video nebude viditelné, ale stále bude existovat */
+  pointer-events: none; /* Video bude neinteraktivní, dokud není na hover */
+  transition: visibility 0.3s ease-in-out;
+  filter: grayscale(100%); /* Fotka bude černobílá */
+}
+
+.vyber_video:hover video {
+  visibility: visible; /* Video se ukáže při hoveru */
+  filter: grayscale(0%);
+}
+
+.vyber_video:hover video.playing {
+  animation: playVideo 1s forwards; /* Video začne hrát při hoveru */
+}
+
+.vyber_video:hover h3 {
+  opacity: 0; /* Text "VIDEO" zmizí při hoveru */
+}
+
+.vyber_foto:hover h3 {
+  opacity: 0; /* Text "VIDEO" zmizí při hoveru */
+}
+
+.vyber_foto:hover {
+  filter: grayscale(0%); /* Při hoveru se fotka obarví */
+}
+
+.vyber h3 {
+  color: white;
+  margin: 0;
+  font-size: 60px;
+  position: relative;
+  z-index: 1; /* Text nad videem */
+}
+
+.vyber_video h3 {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+}
+
+@keyframes playVideo {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
 /* CSS */
@@ -397,6 +443,7 @@ margin: 0 auto;
   flex-direction: column;
   gap: 10px;
   overflow: hidden;
+  padding-bottom: 0px;
 }
 
 .row {
@@ -408,6 +455,17 @@ margin: 0 auto;
 .row img {
   object-fit: cover;
   height: 200px; /* Nastavíme výšku pro lepší srovnání */
+  border-radius: 15px;
+}
+
+.square:hover {
+  transform: scale(1.02);
+  transition: transform ease-in-out 0.3s;
+}
+
+.rect:hover {
+  transform: scale(1.02);
+  transition: transform ease-in-out 0.3s;
 }
 
 .square {
