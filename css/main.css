@@ -21,6 +21,8 @@
 
   html {
     font-family: "DM Sans";
+    scroll-behavior: smooth;
+
   }
   body {
     margin: 0;
@@ -28,7 +30,7 @@
 
  header {
     background-image: url(../img/pozad_2.jpg);
-    padding-bottom: 180px;
+    padding-bottom: 140px;
     background-size: cover;
     padding-top: 10px;
   }
@@ -44,6 +46,7 @@
     padding: 23px 0;
     width: 80%;
     margin: 0 auto;
+    
 }
 
 .menu_part {
@@ -58,6 +61,9 @@
     color: white;
     text-transform: uppercase;
 }
+.menu_part a {
+  transition: all 0.3s ease;
+}
 
 .logo {
     flex: 0;
@@ -69,7 +75,10 @@
 .logo img {
     height: 60px;
 }
-
+.menu_part a:hover {
+  color: var(--modra);
+  font-weight: 700;
+}
 
 /* MOBILNÍ MENU (defaultně schované) */
 .mobile-header {
@@ -213,10 +222,15 @@ h1 {
   padding-top: 12px;
   padding-bottom: 12px;
   border-radius: 15px;
+  transition: all ease-in-out 0.3s;
 }
 .button a {
   color: white;
   text-decoration: none;
+}
+.button:hover{
+  background-color: #337a8d9c;
+  transform: scale(1.05);
 }
 h2, h3  {
   font-family: "Unbounded";
@@ -245,6 +259,7 @@ h3 {
   font-size: 20px;
   padding-bottom: 0;
   margin-bottom: 0;
+  padding-top: 30px;
 }
 
 .vyber {
@@ -275,6 +290,7 @@ h3 {
   background-image: url(../img/bistro/IMG_3548-Enhanced-NR.jpg);
   background-size: cover;
   filter: grayscale(100%); /* Fotka bude černobílá */
+  background-position: center;
 }
 
 .vyber_video video {
@@ -450,7 +466,7 @@ h3 {
 .contact_form {
   display: grid;
 grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
 grid-column-gap: 40px;
 grid-row-gap: 0px;
 max-width: 1100px;
@@ -599,6 +615,7 @@ margin: 0 auto;
   justify-content: center;
   cursor: pointer;
   z-index: 200;
+  transition: transform 0.3s ease;
 }
 
 /* HAMBURGER */
@@ -609,6 +626,7 @@ margin: 0 auto;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  transition: transform 0.3s ease;
 }
 
 .hamburger div {
@@ -619,7 +637,7 @@ margin: 0 auto;
   transition: transform 0.3s, opacity 0.3s;
 }
 
-/* KŘÍŽEK */
+/* KŘÍŽEK - výchozí stav (neviditelný) */
 .close {
   position: absolute;
   width: 40px;
@@ -627,26 +645,46 @@ margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0; /* Skrytý ve výchozím stavu */
-  transition: opacity 0.3s;
+  opacity: 0; /* Skrytý křížek */
+  top: 0;
+  right: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Přidáme i posun */
 }
 
 .close div {
   position: absolute;
-  width: 45px;
+  width: 40px;
   height: 5px;
   background-color: white;
   border-radius: 5px;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
 }
 
-/* Rotace pro křížek */
 .close div:first-child {
   transform: rotate(45deg);
 }
 
 .close div:last-child {
   transform: rotate(-45deg);
+}
+
+/* KDYŽ JE MENU OTEVŘENÉ - PŘEPÍNÁME STYLY */
+.menu-open .hamburger div:nth-child(1) {
+  transform: translateY(12px) rotate(45deg);
+}
+
+.menu-open .hamburger div:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-open .hamburger div:nth-child(3) {
+  transform: translateY(-12px) rotate(-45deg);
+}
+
+/* Křížek se posune na místo hamburgeru */
+.menu-open .close {
+  opacity: 1; /* Křížek se objeví */
+  transform: translateY(10px) translateX(-20px); /* Posun křížku na stejné místo jako hamburger */
 }
 
 /* MOBILNÍ MENU */
@@ -670,10 +708,12 @@ margin: 0 auto;
   font-weight: 600;
   text-align: right;
   margin: 20px 0;
+  text-transform: uppercase;
   margin-right: 40px;
   color: white;
   text-decoration: none;
 }
+
 
 /* KDYŽ JE MENU OTEVŘENÉ - PŘEPÍNÁME STYLY */
 .menu-open .hamburger {

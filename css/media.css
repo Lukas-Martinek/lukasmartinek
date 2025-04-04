@@ -1,3 +1,16 @@
+@media screen and (max-width: 1200px) {
+.contact_form {
+    padding-left: 40px;
+    padding-right: 40px;
+    grid-template-rows: repeat(1, 1fr);
+    padding-bottom: 130px;
+}
+#o_mne h2 {
+    padding-top: 20px;
+}
+
+}
+
 @media screen and (max-width: 940px) {
     .menu {
         display: none; /* Schování desktop menu */
@@ -8,4 +21,84 @@
     header {
         padding-top: 0;
     }
-}
+    h2 {
+        font-size: 40px;
+    }
+
+    .contact_form {
+        grid-template-columns: 1fr; /* Jeden sloupec */
+        grid-template-rows: auto auto; /* Dva řádky */
+      }
+    
+      /* Druhý blok nahoru */
+      .contact_form_part:first-child {
+        grid-area: 2 / 1 / 3 / 2; /* Přesun na druhý řádek */
+      }
+    
+      /* První blok dolů */
+      .contact_form_part:last-child {
+        grid-area: 1 / 1 / 2 / 2; /* Přesun na první řádek */
+      }
+      h1 {
+        font-size: 40px;
+        padding-top: 100px;
+        
+      }
+      .claim {
+        font-size: 30px;
+        
+      }
+      header {
+        padding-bottom: 70px;
+      }
+      #o_mne {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+      }
+      #o_mne p {
+        padding-left: 30px;
+        font-size: 15px;
+        padding-right: 30px;
+      }
+      #o_mne h3 {
+        font-size: 35px;
+        margin-bottom: 20px;
+        margin-top: 5px;
+      }
+      .vyber {
+        margin-top: 20px;
+      }
+      form {
+        padding: 20px;
+      }
+      footer {
+        padding-top: 30px;
+      }
+      .contact_form_part2 h3 {
+        font-size: 40px;
+        padding-left: 30px;
+      }
+      .contact_form_part2 p {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      .proj_container {
+        grid-template-columns: 1fr; /* Jeden sloupec */
+        grid-template-rows: repeat(4, auto); /* Čtyři řádky pro čtyři prvky */
+        gap: 0;
+      }
+      .proj_card {
+        height: 300px;
+        border-radius: 0;
+      }
+    }
+    @media screen and (max-width: 700px) {
+        .vyber {
+            display: inline;
+        }
+        .vyber_foto, .vyber_video {
+            height: 400px;
+        }
+        
+    }
