@@ -1,7 +1,7 @@
 @media screen and (max-width: 1200px) {
 .contact_form {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     grid-template-rows: repeat(1, 1fr);
     padding-bottom: 130px;
 }
@@ -57,9 +57,9 @@
 
       }
       #o_mne p {
-        padding-left: 30px;
+        padding-left: 20px;
         font-size: 15px;
-        padding-right: 30px;
+        padding-right: 20px;
       }
       #o_mne h3 {
         font-size: 35px;
@@ -77,11 +77,11 @@
       }
       .contact_form_part2 h3 {
         font-size: 40px;
-        padding-left: 30px;
+        padding-left: 20px;
       }
       .contact_form_part2 p {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
       }
       .proj_container {
         grid-template-columns: 1fr; /* Jeden sloupec */

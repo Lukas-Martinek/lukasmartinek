@@ -741,3 +741,87 @@ margin: 0 auto;
 .scroll-to-top:hover {
   background-color: var(--modra);
 }
+/** 
+
+
+FOTO 
+
+
+
+
+**/
+.foto_header {
+  background-image: url(../img/foto_pozadi.jpg);
+  padding-bottom: 300px;
+  background-position: center;
+}
+.foto_header h1 {
+  font-size: 90px;
+}
+
+.foto_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.foto_part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; /* zrušení podtržení odkazu */
+  transition: 0.3s ease;
+}
+
+.foto_part {
+    padding-top: 250px;
+    padding-bottom: 250px;
+    text-align: center;
+    filter: grayscale(100%);
+}
+.foto_part:hover {
+  filter: grayscale(0%);
+
+}
+.foto_part p {
+  color: white;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Unbounded";
+  
+}
+.produkty p {
+  max-width: 500px;
+}
+.foto_part h3 {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 0;
+}
+.produkty {
+  background-image: url(../img/nahledy/IMG_4067-2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.portrety {
+  background-image: url(../img/nahledy/IMG_3991.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.akce {
+  background-image: url(../img/fitko/titulka.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.umelecka {
+  background-image: url(../img/nahledy/umelecke_1.2.1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.foto_footer {
+  background-image: url(../img/foto_footer.jpg);
+  background-position: center;
+  padding-top: 150px;
+  padding-bottom: 70px;
+}
