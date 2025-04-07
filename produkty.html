@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Úvodní stránka - Lukáš Martinek</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link href="./css/lightbox.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="produkty_header">
+        <div class="menu">
+            <nav class="menu_part">
+                <a href="/foto.html">Foto</a>
+                <a href="/video.html">Video</a>
+            </nav>
+        
+            <div class="logo">
+                <a href="/"><img src="img/logo.png" alt="Logo"></a>
+            </div>
+        
+            <nav class="menu_part">
+                <a href="index.html#o_mne">O mně</a>
+                <a href="index.html#o_mne">Kontakt</a>
+            </nav>
+        </div>
+        
+        <!-- MOBILNÍ HEADER (Logo + Hamburger) -->
+        <div class="mobile-header">
+            <div class="logo">
+                <a href="/"><img src="img/logo.png" alt="Logo"></a>
+            </div>
+            <div class="menu-toggle" onclick="toggleMobileMenu()">
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="close">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- MOBILNÍ MENU (Zavřené defaultně) -->
+        <div class="mobile-menu" id="mobileMenu">
+            <nav>
+                <a href="/foto.html">Foto</a>
+                <a href="/video.html">Video</a>
+                <a href="/#o_mne">O mně</a>
+                <a href="/#kontakt">Kontakt</a>
+            </nav>
+        </div>
+            <h1>Produkty</h1>
+        </div>
+    </header>
+    <main>
+        <section class="grain-glow">
+            <div class="grain-glow-content">  
+                <div class="grain-glow-image">
+                    <img src="./img/bistro/kolac.jpg" alt="Portrét">
+                </div>
+                <div class="grain-glow-text">
+                    <h2 class="grain-h2">Vizuál, co maká za tebe</h2>
+                    <p>Baví mě fotit věci tak, aby z nich něco zůstalo. Dobrá fotka prodává dřív, než někdo stihne přečíst popisek. Věci, co vypadají přirozeně a mají atmosféru, fungují líp než dokonalá nuda. 
+                        Produkty, jídlo, cokoliv — když to má myšlenku a charakter, rád to zachytím po svým.
+                        <b>Fotky, co zaujmou na první pohled. A zůstanou o chvíli déle</b>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="galerka">
+            <div class="gallery-masonry">
+                <a href="./img/bistro/crossiant.jpg" data-lightbox="portraits">
+                    <img src="./img/bistro/crossiant.jpg" alt=""> 
+                  </a>
+                  <a href="./img/bistro/kolacek.jpg" data-lightbox="portraits">
+                    <img src="./img/bistro/kolacek.jpg" alt="">
+                  </a>
+                  <a href="./img/bistro/chlebicek.jpg" data-lightbox="portraits">
+                    <img src="./img/bistro/chlebicek.jpg" alt="">
+                  </a>
+                <a href="./img/produkty/kytka_2.jpg" data-lightbox="portraits">
+                  <img src="./img/produkty/kytka_2.jpg" alt="">
+                </a>
+                <a href="./img/produkty/kytka_3.jpg" data-lightbox="portraits">
+                  <img src="./img/produkty/kytka_3.jpg" alt="">
+                </a>
+                <a href="./img/produkty/oblozeni.jpg" data-lightbox="portraits">
+                    <img src="./img/produkty/oblozeni.jpg" alt="">
+                  </a>
+                  <a href="./img/produkty/oblozeni_2.jpg" data-lightbox="portraits">
+                    <img src="./img/produkty/oblozeni_2.jpg" alt="">
+                  </a>
+                </a>
+                <a href="./img/produkty/kafe.jpg" data-lightbox="portraits">
+                  <img src="./img/produkty/kafe.jpg" alt="">
+                </a>
+                <a href="./img/produkty/mleko.jpg" data-lightbox="portraits">
+                    <img src="./img/produkty/mleko.jpg" alt="">
+                  </a>
+                  <a href="./img/produkty/hambace.jpg" data-lightbox="portraits">
+                    <img src="./img/produkty/hambace.jpg" alt="">
+                  </a>
+                <a href="./img/produkty/projektor.jpg" data-lightbox="portraits">
+                  <img src="./img/produkty/projektor.jpg" alt="">
+                </a>
+                <a href="./img/produkty/projektor_2.jpg" data-lightbox="portraits">
+                    <img src="./img/produkty/projektor_2.jpg" alt="">
+                  </a>
+                <a href="./img/produkty/IMG_9739-Enhanced-NR.jpg" data-lightbox="portraits">
+                  <img src="./img/produkty/IMG_9739-Enhanced-NR.jpg" alt="">
+                </a>
+                <a href="./img/produkty/IMG_9871.jpg" data-lightbox="portraits">
+                  <img src="./img/produkty/IMG_9871.jpg" alt="">
+                  <a href="./img/produkty/IMG_4979-Enhanced-NR.jpg" data-lightbox="portraits">
+                    <img src="./img/produkty/IMG_4979-Enhanced-NR.jpg" alt="">
+                  </a>
+              </div>
+              <div class="proj_container podstranka">
+                <a href="#" class="proj_card" style="background-image: url('./img/bistro/titulka.jpg');">
+                    <p class="label">produkt - gastro</p>
+                    <div class="proj_image">
+                    </div>
+                    <h3>BISTRO 149</h3>
+                    <p class="subtext">Nové bistro v Liberci</p>
+                </a>
+                <a href="#" class="proj_card" style="background-image: url('./img/produkty/kytka_1.jpg');">
+                    <p class="label">foto</p>
+                    <div class="proj_image">
+                    </div>
+                    <h3>Sušená kytice</h3>
+                    <p class="subtext">Kytice, co vydrží i po svatbě</p>
+                </a>
+                <a href="#" class="proj_card" style="background-image: url('./img/produkty/projektor.jpg');">
+                    <p class="label">foto</p>
+                    <div class="proj_image">
+                    </div>
+                    <h3>nullspaces</h3>
+                    <p class="subtext">Milostný vzkaz pilotům</p>
+                </a>
+            </div>
+              <div class="buttons">
+                <a class="button" href="/foto.html">Zpět</a>
+              </div>
+          </section>
+    </main>
+    <footer id="kontakt" class="foto_footer produkty_footer">
+        <div class="footer_info">
+            <div class="footer_info_1">
+            <h3>Lukáš Martinek</h3>
+                    <ul>
+                        <li><a href="">info@lukasmartinek.cz</a></li>
+                        <li><a href="">603 174 097</a></li>
+                        <li><p class="ico">IČO: 23242242</p></li>
+                        <li><p class="copy">2025 Lukáš Martinek. Všechna práva vyhrazena.</p></p></li>
+                    </ul> 
+            </div>
+            <div class="footer_info_2">
+                <img src="./img/logo.png">
+            </div>
+        </div>
+    </footer>
+    <button class="scroll-to-top" onclick="scrollToTop()">
+        ↑
+    </button>
+    <script src="./js/masonry.js"></script>
+    <script src="./js/imagesloaded.js"></script>
+    <script src="./js/loop.js"></script>
+    <script src="./js/video.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/sipka.js"></script>
+    <script src="./js/mobile_active.js"></script>
+    <script src="./js/lightbox-plus-jquery.js"></script>
+
+    <script>
+       const grid = document.querySelector('.gallery-masonry');
+
+const msnry = new Masonry(grid, {
+  itemSelector: 'a', // protože každá fotka je v <a>
+  percentPosition: true
+});
+
+imagesLoaded(grid).on('progress', function () {
+  msnry.layout();
+}); </script>
+</body>
+</html>

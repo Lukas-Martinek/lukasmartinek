@@ -137,7 +137,7 @@
 
 
     @media screen and (min-width: 1200px) { 
-    .portrety_header h1, .foto_header h1 {
+    .portrety_header h1, .foto_header h1, .produkty_header h1 {
       text-align: left;
       padding-top: 300px;
       padding-bottom: 50px;

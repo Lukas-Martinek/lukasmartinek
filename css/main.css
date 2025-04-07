@@ -223,14 +223,17 @@ h1 {
   padding-bottom: 12px;
   border-radius: 15px;
   transition: all ease-in-out 0.3s;
-}
-.button a {
   color: white;
   text-decoration: none;
+  display: inline-block;
 }
+.buttons {
+  text-align: center;
+}
+
 .button:hover{
   background-color: #337a8d9c;
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 h2, h3  {
   font-family: "Unbounded";
@@ -287,7 +290,7 @@ h3 {
 }
 
 .vyber_foto {
-  background-image: url(../img/bistro/IMG_3548-Enhanced-NR.jpg);
+  background-image: url(../img/bistro//kolac.jpg);
   background-size: cover;
   filter: grayscale(100%); /* Fotka bude černobílá */
   background-position: center;
@@ -831,7 +834,11 @@ FOTO
   background-position: center;
   background-size: cover;
 }
-
+.produkty_header {
+  background-image: url(../img/nahledy/produkty.jpg);
+  background-position: center;
+  background-size: cover;
+}
 
 .grain-glow {
   padding: 5rem 2rem;
@@ -852,7 +859,7 @@ FOTO
 
 .grain-glow-image img {
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   height: auto;
   border-radius: 10px;
   object-fit: cover;
@@ -885,4 +892,36 @@ FOTO
  text-align: left;
  font-size: 50px;
  margin-bottom: 10px;
+ margin-top: 0;
+}
+.portrety_footer {
+  background-image: url(../img/portrety/ja.jpg);
+  background-position: center;
+    padding-top: 150px;
+    padding-bottom: 70px;
+}
+.podstranka {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  padding-top: 70px;
+  max-width: 1400px;
+}
+.podstranka .proj_card {
+  height: 400px;
+}
+.podstranka .label {
+  top: 53%;
+}
+
+.produkty_footer {
+  background-image: url(../img/produkty/mleko.jpg);
+}
+.galerka {
+  padding-bottom: 100px;
+}
+.galerka .button {
+  margin-top: 40px;
+}
+.akce_header {
+ background-image: url(../img/akce/IMG_5239-Enhanced-NR-2.jpg);
 }
