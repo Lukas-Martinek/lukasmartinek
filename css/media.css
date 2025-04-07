@@ -12,7 +12,17 @@
 }
 
 @media screen and (max-width: 940px) {
-    .menu {
+
+
+  .gallery-masonry a {
+    width: 50%; /* 3 sloupce */
+    padding: 5px;
+  }
+  .foto_container {
+    grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  }  
+  .menu {
         display: none; /* Schování desktop menu */
     }
     .mobile-header {
@@ -92,6 +102,8 @@
         height: 300px;
         border-radius: 0;
       }
+
+      
     }
     @media screen and (max-width: 700px) {
         .vyber {
@@ -100,5 +112,49 @@
         .vyber_foto, .vyber_video {
             height: 400px;
         }
-        
+        .foto_header h1 {
+          font-size: 70px;
+        }
+
+        .foto_part.active {
+          filter: grayscale(0%);
+      }
+      .foto_part p {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .foto_part h3 {
+       font-size: 40px;
+      }
+      .foto_header {
+        padding-bottom: 200px;
+      }
+      .foto_part {
+        padding-top: 170px;
+        padding-bottom: 170px;
+      }
     }
+
+
+    @media screen and (min-width: 1200px) { 
+    .portrety_header h1, .foto_header h1 {
+      text-align: left;
+      padding-top: 300px;
+      padding-bottom: 50px;
+      margin-left: 17%;
+    
+    }
+    
+  }
+
+  @media (min-width: 768px) {
+    .grain-glow-content {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .grain-glow-text, 
+    .grain-glow-image {
+        flex: 1;
+    }
+}
