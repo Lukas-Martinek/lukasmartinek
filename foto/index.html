@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Úvodní stránka - Lukáš Martinek</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+</head>
+<body>
+    <header class="foto_header">
+        <div class="menu">
+            <nav class="menu_part">
+                <a href="./">Foto</a>
+                <a href="../video/">Video</a>
+            </nav>
+        
+            <div class="logo">
+                <a href="/"><img src="../img/logo.png" alt="Logo"></a>
+            </div>
+        
+            <nav class="menu_part">
+                <a href="../#o_mne">O mně</a>
+                <a href="../#kontakt">Kontakt</a>
+            </nav>
+        </div>
+        
+        <!-- MOBILNÍ HEADER (Logo + Hamburger) -->
+        <div class="mobile-header">
+            <div class="logo">
+                <a href="/"><img src="../img/logo.png" alt="Logo"></a>
+            </div>
+            <div class="menu-toggle" onclick="toggleMobileMenu()">
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="close">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- MOBILNÍ MENU (Zavřené defaultně) -->
+        <div class="mobile-menu" id="mobileMenu">
+            <nav>
+                <a href="./">Foto</a>
+                <a href="../video/">Video</a>
+                <a href="../#o_mne">O mně</a>
+                <a href="../#kontakt">Kontakt</a>
+            </nav>
+        </div>
+            <h1>Foto</h1>
+            <p>Produktové fotografie, portréty, dokumentace akcí a mnoho dalšího</p>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="foto_container">
+                <a href="produkty.html" class="foto_part produkty">
+                    <div>
+                        <h3>Produkty</h3>
+                        <p>Ať už je produkt jakýkoliv</p>
+                    </div>
+                </a>
+                <a href="portrety.html" class="foto_part portrety">
+                    <div>
+                        <h3>Portréty</h3>
+                        <p>Detaily a postavy</p>
+                    </div>
+                </a>
+                <a href="akce.html" class="foto_part akce">
+                    <div>
+                        <h3>Akce</h3>
+                        <p>Focení sportů, eventů, akcí, večírků</p>
+                    </div>
+                </a>
+                <a href="umelecka-foto.html" class="foto_part umelecka">
+                    <div>
+                        <h3>Umělecká tvorba</h3>
+                        <p>Kreativní projekty, kouty světa</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer id="kontakt" class="foto_footer">
+        <div class="footer_info">
+            <div class="footer_info_1">
+            <h3>Lukáš Martinek</h3>
+                    <ul>
+                        <li><a href="">info@lukasmartinek.cz</a></li>
+                        <li><a href="">603 174 097</a></li>
+                        <li><p class="ico">IČO: 23079673</p></li>
+                        <li><p class="copy">2025 Lukáš Martinek. Všechna práva vyhrazena.</p></p></li>
+                    </ul> 
+            </div>
+            <div class="footer_info_2">
+                <img src="../img/logo.png">
+            </div>
+        </div>
+    </footer>
+    <button class="scroll-to-top" onclick="scrollToTop()">
+        ↑
+    </button>
+    <script src="../js/loop.js"></script>
+    <script src="../js/video.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/sipka.js"></script>
+    <script src="../js/mobile_active.js"></script>
+</body>
+</html>

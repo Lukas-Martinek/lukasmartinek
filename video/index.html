@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Úvodní stránka - Lukáš Martinek</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+</head>
+<body>
+    <header class="video_header">
+        <video autoplay muted loop playsinline>
+            <source src="../videos/umelecka_pozadi.mp4" type="video/mp4">
+        </video>
+        <div class="menu">
+            <nav class="menu_part">
+                <a href="../foto/">Foto</a>
+                <a href="./">Video</a>
+            </nav>
+        
+            <div class="logo">
+                <a href="/"><img src="../img/logo.png" alt="Logo"></a>
+            </div>
+        
+            <nav class="menu_part">
+                <a href="../#o_mne">O mně</a>
+                <a href="index.html#kotakt">Kontakt</a>
+            </nav>
+        </div>
+        
+        <!-- MOBILNÍ HEADER (Logo + Hamburger) -->
+        <div class="mobile-header">
+            <div class="logo">
+                <a href="/"><img src="../img/logo.png" alt="Logo"></a>
+            </div>
+            <div class="menu-toggle" onclick="toggleMobileMenu()">
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="close">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- MOBILNÍ MENU (Zavřené defaultně) -->
+        <div class="mobile-menu" id="mobileMenu">
+            <nav>
+                <a href="../foto/">Foto</a>
+                <a href="./">Video</a>
+                <a href="../#o_mne">O mně</a>
+                <a href="../#kontakt">Kontakt</a>
+            </nav>
+        </div>
+            <h1>VIDEO</h1>
+            <p>Komerční projekty jako reklamy, obsah na sociální sítě a  osobní kreativní projekty</p>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="video_container">
+                <a href="reklamy.html" class="video_part produkty_video">
+                    <div class="video_wrapper">
+                        <video loop muted>
+                            <source src="../videos/produkty_pozadi.mp4" type="video/mp4">
+                        </video>
+                        <div class="text_overlay">
+                            <h3>Reklamy, produkty, socky</h3>
+                            <p>Reklamy produktů, promovidea, rozhovory a veškerý možný obsah na sociální sítě</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="umelecka-video.html" class="video_part umelecka_video">
+                    <div class="video_wrapper">
+                        <video loop muted>
+                            <source src="../videos/umelecka_pozadi.mp4" type="video/mp4">
+                        </video>
+                        <div class="text_overlay">
+                            <h3>Umělecká tvorba</h3>
+                            <p>Kreativní osobní projekty</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer id="kontakt" class="foto_footer video_footer">
+        <div class="footer_info">
+            <div class="footer_info_1">
+            <h3>Lukáš Martinek</h3>
+                    <ul>
+                        <li><a href="">info@lukasmartinek.cz</a></li>
+                        <li><a href="">603 174 097</a></li>
+                        <li><p class="ico">IČO: 23079673</p></li>
+                        <li><p class="copy">2025 Lukáš Martinek. Všechna práva vyhrazena.</p></p></li>
+                    </ul> 
+            </div>
+            <div class="footer_info_2">
+                <img src="../img/logo.png">
+            </div>
+        </div>
+    </footer>
+    <button class="scroll-to-top" onclick="scrollToTop()">
+        ↑
+    </button>
+    <script src="../js/menu.js"></script>
+    <script src="../js/sipka.js"></script>
+    <script src="../js/mobile_active.js"></script>
+    <script src="../js/video_pause.js"></script>
+</body>
+</html>

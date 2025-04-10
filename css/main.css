@@ -554,10 +554,11 @@ margin: 0 auto;
   color: white;
   padding-left: 0;
 }
-.footer_info a {
+.footer_info a, .footer_info p {
   color: white;
   text-decoration: none;
   margin-bottom: 17px;
+  font-weight: 300;
 }
 .footer_info p {
   margin: 0;
@@ -754,11 +755,8 @@ FOTO
 
 **/
 .foto_header {
-  background-image: url(../img/foto_pozadi.jpg);
+  background-image: url(../img/foto-header.jpg);
   background-position: center;
-}
-.foto_header h1 {
-  font-size: 90px;
 }
 
 .foto_container {
@@ -817,7 +815,7 @@ FOTO
   background-size: cover;
 }
 .umelecka {
-  background-image: url(../img/nahledy/umelecke_1.2.1.jpg);
+  background-image: url(../img/umelecke/IMG_3919.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -924,4 +922,303 @@ FOTO
 }
 .akce_header {
  background-image: url(../img/akce/IMG_5239-Enhanced-NR-2.jpg);
+}
+.contact_form .buttons {
+  text-align: right;
+}
+.akce_footer {
+  background-image: url(../img/fitko/IMG_7468-Enhanced-NR-2.jpg);
+}
+
+.video_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 700px; /* nebo třeba minmax(300px, 500px) */
+}
+
+.video_part {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.video_wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.video_container video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.text_overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-family: "Unbounded";
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+/* aby poslední sekce zabrala 2 sloupce */
+.umelecka_video {
+  grid-column: span 2;
+}
+.produkty_video {
+  grid-column: span 2;
+}
+
+.video_part video {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  /* Na počítači */
+  .video_part:hover video {
+      filter: grayscale(0%);
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  /* Na mobilu */
+  .video_part video {
+      filter: grayscale(0%);
+  }
+}
+
+.video_container h3{
+  color: #fff;
+  font-size: 39px;
+  margin-bottom: 0;
+}
+.video_footer {
+  background-image: url(../img/choker/nahled_1.1.1.jpg);
+}
+
+.reklamy-container {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+/* Video jako pozadí */
+.reklama-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.reklamy-container, .reklama-content {
+  box-sizing: border-box;
+}
+/* Textová část nad videem */
+.reklama-content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  color: white;
+  text-align: left;
+  max-width: 100%; /* Zajistí, že obsah nebude překračovat 100% šířky */
+  width: 100%;
+}
+/* Nadpis */
+.reklama-content h2 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+  text-align: left;
+}
+
+/* Podnadpis */
+.reklama-podnadpis {
+  font-size: 40px;
+  font-family: "Unbounded";
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Text */
+.reklama-content p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+/* Odkazy s logy */
+.reklama-odkazy {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.reklama-odkazy a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.reklama-odkazy img {
+  width: 50px; /* Nastav šířku loga */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Efekt na loga při najetí myší */
+.reklama-odkazy a:hover img {
+  transform: scale(1.1); /* Zvětšení při hoveru */
+}
+
+.overlay-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 100%;
+  background: linear-gradient(to right, #000000d8, rgba(0,0,0,0)); /* zleva černá do průhledna */
+  z-index: 1;
+}
+.video_header p{
+  font-family: "Unbounded";
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 150px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.video_header {
+  position: relative;
+  overflow: hidden;
+}
+
+.video_header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.video_header {
+  position: relative;
+  overflow: hidden;
+}
+
+.video_header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black; /* fallback barva kdyby video nejelo */
+  z-index: 1;
+  opacity: 0.5; /* třeba tmavší efekt přes video */
+}
+
+/* Video */
+.video_header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none; /* ať se přes video dá klikat */
+}
+
+.video_header .logo,
+.video_header h1,
+.video_header p {
+  position: relative;
+  z-index: 2;
+}
+.foto_header p {
+  font-family: "Unbounded";
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 150px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.reklamy-container a {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease; /* Plynulá změna barvy */
+  font-weight: 900;
+}
+
+.reklamy-container a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  bottom: -5px;
+  left: 50%;
+  transition: width 0.3s ease, left 0.3s ease; /* Plynulý efekt podtržení */
+}
+
+.reklamy-container a:hover {
+  color: #ffffff; /* Změna barvy při hoveru */
+}
+
+.reklamy-container a:hover::after {
+  width: 100%; /* Podtržení zleva doprava */
+  left: 0; /* Vyrovnání na celou šířku */
+}
+.logo {
+  display: inline-block; /* Aby se transformace na divu projevila správně */
+  transition: transform 0.3s ease;
+}
+
+.logo:hover { 
+  transform: scale(1.1);
+  transition: transform 0.3s ease; /* Plynulá animace */
+}
+.reklama-content {
+  padding-left: 120px;
+}
+.produkty_header h1, .akce_header h1, .portrety_header h1, .umelecka_header h1 {
+  padding-bottom: 100px;
 }

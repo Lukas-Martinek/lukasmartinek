@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reklamy - Lukáš Martinek</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link href="../css/lightbox.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="mobile-menu" id="mobileMenu">
+            <nav>
+                <a href="../foto/">Foto</a>
+                <a href="../video/">Video</a>
+                <a href="../#o_mne">O mně</a>
+                <a href="index.html#kotakt">Kontakt</a>
+            </nav>
+        </div>
+    <header class="video_header">
+        <video autoplay muted loop playsinline>
+            <source src="../videos/produkty_pozadi_2.mp4" type="video/mp4">
+        </video>
+        <div class="menu">
+            <nav class="menu_part">
+                <a href="../foto/">Foto</a>
+                <a href="../video/">Video</a>
+            </nav>
+        
+            <div class="logo">
+                <a href="/"><img src="../img/logo.png" alt="Logo"></a>
+            </div>
+        
+            <nav class="menu_part">
+                <a href="../#o_mne">O mně</a>
+                <a href="../#kontakt">Kontakt</a>
+            </nav>
+        </div>
+        
+        <!-- MOBILNÍ HEADER (Logo + Hamburger) -->
+        <div class="mobile-header">
+            <div class="logo">
+                <a href="/"><img src="img/logo.png" alt="Logo"></a>
+            </div>
+            <div class="menu-toggle" onclick="toggleMobileMenu()">
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="close">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- MOBILNÍ MENU (Zavřené defaultně) -->
+            <h1>Reklamy, produkty, socky</h1>
+            <p>Vytvářim kreativní reklamy, rozhovory a obsah na sociální sítě</p>
+        </div>
+    </header>
+    <main>
+        <section>
+          <div class="reklamy-container">
+            <div class="reklama-video">
+                <video autoplay muted loop>
+                    <source src="../videos/norbert_pozadi.mp4"/>
+                    Váš prohlížeč nepodporuje přehrávání videí.
+                </video>
+                <div class="overlay-gradient"></div> <!-- Tohle je ten gradient -->
+            </div>
+            <div class="reklama-content">
+                <h2>Norbert Hojda</h2>
+                <p class="reklama-podnadpis">Šéfkuchař národního kalibru</p>
+                <p>Norbert Hojda je zkušený severský šéfkuchař, který nás celých 8 let reprezentoval na olympiádách. O to větší ctí pro nás bylo, 
+                že jsme ho ve spolupráci s <a href="https://aneri.cz" target="_blank" rel="noopener noreferrer"> ANERI marketing </a>mohli představit na sociálních sítích Tvrze Krassa, kde už 5 let vede kuchyni.</p>
+                <p>V rámci spolupráce vznikla tři hlavní videa – rozhovor s šéfkuchařem, představení menu a pohled do zákulisí jeho kulinářského umění. 
+                Další videa, která jsme vytvořili, lze zhlédnout na Instagramu Tvrze Krassa.</p>
+                
+                <!-- Loga jako odkazy -->
+                <div class="reklama-odkazy">
+                    <a href="https://www.instagram.com/p/DGnimoDt52Q/" target="_blank" rel="noopener noreferrer">
+                        <img src="../img/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="../img/youtube.png" alt="Youtube">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="reklamy-container">
+          <div class="reklama-video">
+              <video autoplay muted loop>
+                  <source src="../videos/bistro_pozadi.mp4"/>
+                  Váš prohlížeč nepodporuje přehrávání videí.
+              </video>
+              <div class="overlay-gradient"></div> <!-- Tohle je ten gradient -->
+          </div>
+          <div class="reklama-content">
+              <h2>BISTRO 149</h2>
+              <p class="reklama-podnadpis">Nové bistro v Liberci</p>
+              <p><a href="https://bistro149.cz/">Bistro 149</a> je nové bistro nacházející se na Chrastavské 149. Sídlí v nově rekonstruované budově DTZ, která souteží o budovu roku.
+              Měníčko se mění každý týden a kuchyně se zaměřuje na středomořské pokrmy</p>
+              <p>V rámci spolupráce vzniklo několik videí sociální sítě, každé zaměřující se na jiný prvek nabídky bistra. Vytvořil jsem i <a href="">fotky jídla</a>. Kromě sociálních sítí vznikly i podklady na jejich <a href="">web.</a>
+              </p>
+              
+              <!-- Loga jako odkazy -->
+              <div class="reklama-odkazy">
+                  <a href="#">
+                      <img src="../img/instagram.png" alt="Instagram">
+                  </a>
+                  <a href="#">
+                      <img src="../img/youtube.png" alt="Youtube">
+                  </a>
+              </div>
+          </div>
+      </div>
+      <div class="reklamy-container">
+        <div class="reklama-video">
+            <video autoplay muted loop>
+                <source src="../videos/kytice_pozadi.mp4"/>
+                Váš prohlížeč nepodporuje přehrávání videí.
+            </video>
+            <div class="overlay-gradient"></div> <!-- Tohle je ten gradient -->
+        </div>
+        <div class="reklama-content">
+            <h2>Sušená kytice</h2>
+            <p class="reklama-podnadpis">Svatební floristka</p>
+            <p>Kdo by nechtěl mít na svatbu kytici, která neuvadne a na kráse jí nechybí? <a href="">Coolnicka</a> je eshop se svatebními komplety vytvářých z kvalitních látkových a sušených květin a já dostal šanci jednu kytici "zdokumentovat".</p>
+            <p>V rámci spolupráce vznikla videa do pozadí na nově chystaný web, <a href="">fotky</a> a jeden reel. Celý obsah jsem stylizoval do "dreamy" looku s mým oblíbeným glowem a grainem.</p>
+            
+            <!-- Loga jako odkazy -->
+            <div class="reklama-odkazy">
+                <a href="#">
+                    <img src="../img/instagram.png" alt="Instagram">
+                </a>
+                <a href="#">
+                    <img src="../img/youtube.png" alt="Youtube">
+                </a>
+            </div>
+        </div>
+    </div>
+        </section>
+    </main>
+    <footer id="kontakt" class="foto_footer produkty_footer">
+        <div class="footer_info">
+            <div class="footer_info_1">
+            <h3>Lukáš Martinek</h3>
+                    <ul>
+                        <li><a href="">info@lukasmartinek.cz</a></li>
+                        <li><a href="">603 174 097</a></li>
+                        <li><p class="ico">IČO: 23079673</p></li>
+                        <li><p class="copy">2025 Lukáš Martinek. Všechna práva vyhrazena.</p></p></li>
+                    </ul> 
+            </div>
+            <div class="footer_info_2">
+                <img src="../img/logo.png">
+            </div>
+        </div>
+    </footer>
+    <button class="scroll-to-top" onclick="scrollToTop()">
+        ↑
+    </button>
+    <script src="../js/loop.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/sipka.js"></script>
+    <script src="../js/mobile_active.js"></script>
+</body>
+</html>

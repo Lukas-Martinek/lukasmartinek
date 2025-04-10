@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Úvodní stránka - Lukáš Martinek</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link href="../css/lightbox.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="portrety_header akce_header">
+        <div class="menu">
+            <nav class="menu_part">
+                <a href="./">Foto</a>
+                <a href="../video/">Video</a>
+            </nav>
+        
+            <div class="logo">
+                <a href="/"><img src="../img/logo.png" alt="Logo"></a>
+            </div>
+        
+            <nav class="menu_part">
+                <a href="../#o_mne">O mně</a>
+                <a href="../#kontakt">Kontakt</a>
+            </nav>
+        </div>
+        
+        <!-- MOBILNÍ HEADER (Logo + Hamburger) -->
+        <div class="mobile-header">
+            <div class="logo">
+                <a href="/"><img src="../img/logo.png" alt="Logo"></a>
+            </div>
+            <div class="menu-toggle" onclick="toggleMobileMenu()">
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="close">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- MOBILNÍ MENU (Zavřené defaultně) -->
+        <div class="mobile-menu" id="mobileMenu">
+            <nav>
+                <a href="./">Foto</a>
+                <a href="../video/">Video</a>
+                <a href="../#o_mne">O mně</a>
+                <a href="../#kontakt">Kontakt</a>
+            </nav>
+        </div>
+            <h1>Akce</h1>
+        </div>
+    </header>
+    <main>
+        <section class="grain-glow">
+            <div class="grain-glow-content">  
+                <div class="grain-glow-image">
+                    <img src="../img/akce/IMG_5397-Enhanced-NR-2.jpg" alt="Portrét">
+                </div>
+                <div class="grain-glow-text">
+                    <h2 class="grain-h2">Fotky, co tě vezmou zpět</h2>
+                    <p>Eventy nejsou jen o tom, co se děje na pódiu. Jsou o atmosféře, emocích a momentech, které se odehrávají mezi řádky. Fotím akce tak, aby každý okamžik měl svůj vibe — od živých konferencí po oslavy, které zůstanou v paměti i po jejich skončení.
+                        <b>Fotky, co zaujmou na první pohled. A zůstanou o chvíli déle</b>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="galerka">
+            <div class="gallery-masonry">
+                <a href="../img/akce/expo_1.jpg" data-lightbox="portraits">
+                  <img src="../img/akce/expo_1.jpg" alt="">
+                </a>
+                <a href="../.img/akce/expo_2.jpg" data-lightbox="portraits">
+                  <img src="../img/akce/expo_2.jpg" alt="">
+                </a>
+                <a href="../img/akce/IMG_5397-Enhanced-NR-2.jpg" data-lightbox="portraits">
+                    <img src="../img/akce/IMG_5397-Enhanced-NR-2.jpg" alt="">
+                  </a>.
+                  <a href="../img/akce/IMG_5319-Enhanced-NR-2.jpg" data-lightbox="portraits">
+                    <img src="../img/akce/IMG_5319-Enhanced-NR-2.jpg" alt="">
+                  </a>
+                <a href="../img/fitko/IMG_7325-Enhanced-NR-2.jpg" data-lightbox="portraits">
+                  <img src="../img/fitko/IMG_7325-Enhanced-NR-2.jpg" alt="">
+                </a>
+                <a href="../img/fitko/IMG_7252-Enhanced-NR-2.jpg" data-lightbox="portraits">
+                    <img src="../img/fitko/IMG_7252-Enhanced-NR-2.jpg" alt="">
+                  </a>
+                <a href="../img/fitko/IMG_7116-Enhanced-NR-2.jpg" data-lightbox="portraits">
+                  <img src="../img/fitko/IMG_7116-Enhanced-NR-2.jpg" alt="">
+                </a>
+                <a href="../img/fitko/IMG_7468-Enhanced-NR-2.jpg" data-lightbox="portraits">
+                    <img src="../img/fitko/IMG_7468-Enhanced-NR-2.jpg" alt="">
+                  </a>
+                <a href="../img/akce/IMG_8365-Enhanced-NR.jpg" data-lightbox="portraits">
+                  <img src="../img/akce/IMG_8365-Enhanced-NR.jpg" alt="">
+                </a>
+                <a href="../img/akce/IMG_8281-Enhanced-NR.jpg" data-lightbox="portraits">
+                  <img src="../img/akce/IMG_8281-Enhanced-NR.jpg" alt="">
+                </a>
+              </div>
+              <div class="buttons">
+                <a class="button" href="./">Zpět</a>
+              </div>
+          </section>
+    </main>
+    <footer id="kontakt" class="portrety_footer akce_footer">
+        <div class="footer_info">
+            <div class="footer_info_1">
+            <h3>Lukáš Martinek</h3>
+                    <ul>
+                        <li><a href="">info@lukasmartinek.cz</a></li>
+                        <li><a href="">603 174 097</a></li>
+                        <li><p class="ico">IČO: 23242242</p></li>
+                        <li><p class="copy">2025 Lukáš Martinek. Všechna práva vyhrazena.</p></p></li>
+                    </ul> 
+            </div>
+            <div class="footer_info_2">
+                <img src="../img/logo.png">
+            </div>
+        </div>
+    </footer>
+    <button class="scroll-to-top" onclick="scrollToTop()">
+        ↑
+    </button>
+    <script src="../js/masonry.js"></script>
+    <script src="../js/imagesloaded.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/sipka.js"></script>
+    <script src="../js/mobile_active.js"></script>
+    <script src="../js/lightbox-plus-jquery.js"></script>
+
+    <script>
+       const grid = document.querySelector('.gallery-masonry');
+
+const msnry = new Masonry(grid, {
+  itemSelector: 'a', // protože každá fotka je v <a>
+  percentPosition: true
+});
+
+imagesLoaded(grid).on('progress', function () {
+  msnry.layout();
+}); </script>
+</body>
+</html>

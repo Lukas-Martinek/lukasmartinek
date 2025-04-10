@@ -12,8 +12,8 @@
     <header>
         <div class="menu">
             <nav class="menu_part">
-                <a href="/foto.html">Foto</a>
-                <a href="/video.html">Video</a>
+                <a href="foto/">Foto</a>
+                <a href="video/">Video</a>
             </nav>
         
             <div class="logo">
@@ -29,7 +29,7 @@
         <!-- MOBILNÍ HEADER (Logo + Hamburger) -->
         <div class="mobile-header">
             <div class="logo">
-                <a href="/"><img src="img/logo.png" alt="Logo"></a>
+                <a href="/"><img src="./img/logo.png" alt="Logo"></a>
             </div>
             <div class="menu-toggle" onclick="toggleMobileMenu()">
                 <div class="hamburger">
@@ -47,8 +47,8 @@
         <!-- MOBILNÍ MENU (Zavřené defaultně) -->
         <div class="mobile-menu" id="mobileMenu">
             <nav>
-                <a href="/foto.html">Foto</a>
-                <a href="/video.html">Video</a>
+                <a href="foto/">Foto</a>
+                <a href="video/">Video</a>
                 <a href="/#o_mne">O mně</a>
                 <a href="/#kontakt">Kontakt</a>
             </nav>
@@ -110,15 +110,15 @@
             </div>
         </section>
         <div class="vyber" id="portfolio">
-            <a href="/foto.html">
+            <a href="./foto/">
                 <div class="vyber_foto">
                     <h3>FOTO</h3>
                 </div>
             </a>
-            <a href="/video.html">
+            <a href="./video/">
                 <div class="vyber_video">
                     <video id="video" autoplay loop muted playsinline>
-                        <source src="./video/vyber_pozadi.mp4" type="video/mp4">
+                        <source src="./videos/vyber_pozadi.mp4" type="video/mp4">
                         Tvůj prohlížeč nepodporuje video tag.
                     </video>
                     <h3>VIDEO</h3>
@@ -128,14 +128,14 @@
         <section>
             <h2>Poslední projekty</h2>
             <div class="proj_container">
-                <a href="#" class="proj_card" style="background-image: url('./img/bistro/IMG_3548-Enhanced-NR.jpg');">
+                <a href="/reklamy.html/#hojda" class="proj_card" style="background-image: url('./img/krassa/nahled_hojda_3.1.1.jpg');">
                     <p class="label">video</p>
                     <div class="proj_image">
                     </div>
                     <h3>Norbert Hojda</h3>
                     <p class="subtext">Šéfkuchař národního kalibru</p>
                 </a>
-                <a href="#" class="proj_card" style="background-image: url('./img/fitko/titulka.jpg');">
+                <a href="/profitko.html" class="proj_card" style="background-image: url('./img/fitko/titulka.jpg');">
                     <p class="label">foto</p>
                     <div class="proj_image">
                     </div>
@@ -166,7 +166,9 @@
                 <input type="text" placeholder="Vaše jméno" required>
                     <input type="email" placeholder="Váš e-mail" required>
                 <textarea placeholder="Zpráva pro mě..." required></textarea>
-                <div class="button"><a href="">Odeslat</a></div>
+                <div class="buttons">
+                    <a class="button" href="/foto.html">Odeslat</a>
+                  </div>
             </form>
             </div>
              <div class="contact_form_part2">
@@ -180,7 +182,7 @@
                     <ul>
                         <li><a href="">info@lukasmartinek.cz</a></li>
                         <li><a href="">603 174 097</a></li>
-                        <li><p class="ico">IČO: 23242242</p></li>
+                        <li><p class="ico">IČO: 23079673</p></li>
                         <li><p class="copy">2025 Lukáš Martinek. Všechna práva vyhrazena.</p></p></li>
                     </ul> 
             </div>
