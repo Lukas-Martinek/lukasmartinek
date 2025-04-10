@@ -176,9 +176,7 @@
     }
 
 
-    @media screen and (min-width: 1200px) { 
-    
-  }
+  
 
   @media (min-width: 768px) {
     .grain-glow-content {
@@ -200,5 +198,9 @@
 .video_header .mobile-menu {
   position: relative;
   z-index: 2;
+}
+
+.reklama-content {
+  padding-left: 120px;
 }
 }

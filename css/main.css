@@ -1216,9 +1216,7 @@ FOTO
   transform: scale(1.1);
   transition: transform 0.3s ease; /* Plynulá animace */
 }
-.reklama-content {
-  padding-left: 120px;
-}
+
 .produkty_header h1, .akce_header h1, .portrety_header h1, .umelecka_header h1 {
   padding-bottom: 100px;
 }
