@@ -828,7 +828,7 @@ FOTO
 
 
 .portrety_header {
-  background-image: url(../img/nahledy/portrety.jpg);
+  background-image: url(../img/portrety/portrety_nahled.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -1218,5 +1218,18 @@ FOTO
 }
 
 .produkty_header h1, .akce_header h1, .portrety_header h1, .umelecka_header h1 {
-  padding-bottom: 100px;
+  padding-bottom: 140px;
+}
+.kytka_header {
+  background-image: url(../img/produkty/kytka_header.jpg);
+}
+.bistro_header {
+  background-image: url(../img/bistro/kolac.jpg);
+}
+
+.umelecka_footer {
+  background-image: url(../img/umelecka-footer_1.4.1.jpg);
+}
+.umelecka-foto_header {
+  background-image: url(../img/umelecke/botanicka_3.jpg);
 }
