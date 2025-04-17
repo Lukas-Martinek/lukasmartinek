@@ -55,9 +55,14 @@
         </div>
             <h1>Foto. Video.</h1>
             <p class="claim">Váš příběh, mým pohledem.</p>
+            <div class="button_container">
             <div class="buttons">
-                <a class="button" href="#portfolio">Portfolio</a>
+                <a class="button" href="./foto/">foto</a>
               </div>
+              <div class="buttons">
+                <a class="button" href="./video/">video</a>
+              </div>
+            </div>
         </div>
     </header>
     <main>
@@ -100,39 +105,40 @@
 
         </section>
         <section id="o_mne">
-            <h2>O mně</h2>
+            <div class="o_mne_container">
+                <div>
+                    <img src="./img/ja.jpg">
+                </div>
+                <div>
+                    
             <h3 class="tvoreni">Tvořením žiju</h3>
-            <div>
-            <p>Stějně jako tenhle web - držet foťák a tvořit je pro mě způsob, jak se umělecky vyjádřit. Rád experimentuji jak se samotným zachycováním, tak následnou post-produkcí. Mým cílem je, aby naše společná práce byla 
+      
+            
+            <p>Držet foťák a tvořit je pro mě způsob, jak se umělecky vyjádřit. Rád experimentuji jak se samotným zachycováním, tak následnou post-produkcí. Mým cílem je, aby naše společná práce byla 
                 zábava pro všechny zapojené a přinášela koláče. Ať už potřebujete zachytit cokoliv, neváhejte se ozvat. </p>
             <p>Zaměřuji se na kreativní tvorbu, komerční projekty, reklamy a portréty. Jsem schopný přispůsobit se, jelikož sám tvořím v několika stylech. Snažím se, 
-                aby měl výsledek duši, význam a hlavně fungoval. Působím hlavně <b>v Liberci,</b> ale nebojte, jsem vlastník řidičáku.</p>
-            </div>
-        </section>
-        <div class="vyber" id="portfolio">
-            <a href="./foto/">
-                <div class="vyber_foto">
-                    <h3>FOTO</h3>
+                aby měl výsledek duši, význam a hlavně fungoval. Působím hlavně <b>v Liberci,</b> ale nědělá mi problém dojet.</p>
+               
                 </div>
-            </a>
-            <a href="./video/">
-                <div class="vyber_video">
-                    <video id="video" autoplay loop muted playsinline>
-                        <source src="./videos/vyber_pozadi.mp4" type="video/mp4">
-                        Tvůj prohlížeč nepodporuje video tag.
-                    </video>
-                    <h3>VIDEO</h3>
-                </div>
-            </a>
+            
+            
         </div>
+        </section>
         <section>
-            <h2>Poslední projekty</h2>
             <div class="proj_container">
+                
+                    <div>
+                        <h2>Moje práce</h2>
+                        <p class="proj_podnadpis">Poslední projekty, na kterých jsem pracoval pro podrobnější rozdělení lze jít na 
+                            <a href="./foto/">foto</a> a <a href="./video/">video</a>.
+                        </p>
+                    </div>
+                
                 <a href="/reklamy.html/#hojda" class="proj_card" style="background-image: url('./img/krassa/nahled_hojda_3.1.1.jpg');">
                     <p class="label">video</p>
                     <div class="proj_image">
                     </div>
-                    <h3>Norbert Hojda</h3>
+                    <h3>Chef Hojda</h3>
                     <p class="subtext">Šéfkuchař národního kalibru</p>
                 </a>
                 <a href="/profitko.html" class="proj_card" style="background-image: url('./img/fitko/titulka.jpg');">
@@ -156,7 +162,15 @@
                     <h3>Choker</h3>
                     <p class="subtext">Milostný vzkaz pilotům</p>
                 </a>
+                <a href="./video/umelecka-video.html" class="proj_card" style="background-image: url('./img/choker/3_ig.jpg');">
+                    <p class="label">video</p>
+                    <div class="proj_image">
+                    </div>
+                    <h3>Choker</h3>
+                    <p class="subtext">Milostný vzkaz pilotům</p>
+                </a>
             </div>
+    
         </section>
     </main>
     <footer id="kontakt">

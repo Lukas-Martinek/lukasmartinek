@@ -142,6 +142,10 @@
       .reklama-odkazy {
         justify-content: center;
       }
+      .card-container {
+        flex-direction: column;
+        height: auto;
+      }
       }
     @media screen and (max-width: 700px) {
         .vyber {
@@ -171,7 +175,10 @@
         padding-top: 170px;
         padding-bottom: 170px;
       }
-
+      .button_container {
+        flex-direction: column; /* Tlačítka pod sebou na mobilu */
+        gap: 10px; /* Menší mezera mezi tlačítky na mobilu */
+      }
 
     }
 

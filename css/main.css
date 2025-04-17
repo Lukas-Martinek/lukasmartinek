@@ -208,6 +208,10 @@ h1 {
   font-weight: 600;
   margin-top: 10px;
 }
+header .button {
+  font-size: 25px;
+
+}
 .button {
   text-align: center;
   color: white;
@@ -226,13 +230,14 @@ h1 {
   color: white;
   text-decoration: none;
   display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 .buttons {
   text-align: center;
 }
 
 .button:hover{
-  background-color: #337a8d9c;
+  background-color: #0a566b;
   transform: scale(1.03);
 }
 h2, h3  {
@@ -242,125 +247,46 @@ h2, h3  {
   color: #337A8D;
 }
 h2 {
-  font-size: 40px;
+  font-size: 60px;
+  text-align: left;
 }
 h3 {
   font-size: 32px;
 }
 .tvoreni {
-  font-size: 40px;
+  font-size: 60px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-align: left;
 }
 #o_mne p {
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 700px;
   font-size: 18px;
   padding-bottom: 20px;
+  padding-right: 40px;
 }
 #o_mne h2 {
   font-size: 20px;
   padding-bottom: 0;
   margin-bottom: 0;
-  padding-top: 30px;
+margin-top: 0;
 }
-
-.vyber {
-  display: flex;
-  width: 100%;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.vyber a {
-  width: 50%; /* Zajišťuje, že každý blok bude mít 50% šířky */
-  color: white;
-  text-decoration: none;
-}
-
-.vyber_foto, .vyber_video {
-  position: relative;
-  height: 600px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; /* Aby se neobjevily posuvníky při zvětšení videa */
-  transition: all 0.3s ease-in-out; /* Plynulý přechod pro hover */
-}
-
-.vyber_foto {
-  background-image: url(../img/bistro//kolac.jpg);
-  background-size: cover;
-  filter: grayscale(100%); /* Fotka bude černobílá */
-  background-position: center;
-}
-
-.vyber_video video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0; /* Video nebude viditelné, ale stále bude existovat */
-  pointer-events: none; /* Video bude neinteraktivní, dokud není na hover */
-  transition: visibility 0.3s ease-in-out;
-  filter: grayscale(100%); /* Fotka bude černobílá */
-}
-
-.vyber_video:hover video {
-  visibility: visible; /* Video se ukáže při hoveru */
-  filter: grayscale(0%);
-}
-
-.vyber_video:hover video.playing {
-  animation: playVideo 1s forwards; /* Video začne hrát při hoveru */
-}
-
-.vyber_video:hover h3 {
-  opacity: 0; /* Text "VIDEO" zmizí při hoveru */
-}
-
-.vyber_foto:hover h3 {
-  opacity: 0; /* Text "VIDEO" zmizí při hoveru */
-}
-
-.vyber_foto:hover {
-  filter: grayscale(0%); /* Při hoveru se fotka obarví */
-}
-
-.vyber h3 {
-  color: white;
-  margin: 0;
-  font-size: 60px;
-  position: relative;
-  z-index: 1; /* Text nad videem */
-}
-
-.vyber_video h3 {
-  position: absolute;
-  z-index: 1;
-  text-align: center;
-}
-
-@keyframes playVideo {
-  0% {
-    visibility: visible;
-  }
-  100% {
-    visibility: visible;
-  }
+p {
+  font-weight: 200;
 }
 
 /* CSS */
 .proj_container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 20px;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
   padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .proj_card {
@@ -373,7 +299,7 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 500px;
+  height: 300px;
   padding: 20px;
   color: white;
   text-decoration: none;
@@ -466,6 +392,40 @@ h3 {
   transform: scale(1.01);
 }
 
+.proj_container h2 {
+  margin-top: 0;
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+.proj_podnadpis {
+  font-size: 20px;
+}
+
+.proj_container p a {
+  color: var(--modra);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease; /* Plynulá změna barvy */
+  font-weight: 900;
+}
+
+
+
+.proj_container p a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: var(--modra);
+  bottom: 0px;
+  left: 50%;
+  transition: width 0.3s ease, left 0.3s ease; /* Plynulý efekt podtržení */
+}
+
+.proj_container p a:hover::after {
+  width: 100%; /* Podtržení zleva doprava */
+  left: 0; /* Vyrovnání na celou šířku */
+}
 .contact_form {
   display: grid;
 grid-template-columns: repeat(2, 1fr);
@@ -571,20 +531,20 @@ margin: 0 auto;
 .gallery {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   overflow: hidden;
   padding-bottom: 0px;
 }
 
 .row {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   white-space: nowrap;
 }
 
 .row img {
   object-fit: cover;
-  height: 200px; /* Nastavíme výšku pro lepší srovnání */
+  height: 250px; /* Nastavíme výšku pro lepší srovnání */
   border-radius: 15px;
 }
 
@@ -599,12 +559,12 @@ margin: 0 auto;
 }
 
 .square {
-  width: 200px;
+  width: 250px;
   aspect-ratio: 1 / 1;
 }
 
 .rect {
-  width: 300px; /* 15:10 odpovídá 3:2 */
+  width: 400px; /* 15:10 odpovídá 3:2 */
   aspect-ratio: 3 / 2;
 }
 .menu-toggle {
@@ -1232,4 +1192,32 @@ FOTO
 }
 .umelecka-foto_header {
   background-image: url(../img/umelecke/botanicka_3.jpg);
+}
+
+.button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.o_mne_container img {
+width: 100%;
+border-radius: 10px;
+}
+.o_mne_container {
+  display: flex;
+  padding-top: 100px;
+  margin: 0 auto;
+  max-width: 1200px;
+  gap: 50px;
+}
+
+.o_mne_container .button_container {
+  justify-content: left;
+}
+
+#o_mne {
+  padding-bottom: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
