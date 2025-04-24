@@ -863,13 +863,6 @@ FOTO
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
   padding-top: 70px;
-  max-width: 1400px;
-}
-.podstranka .proj_card {
-  height: 400px;
-}
-.podstranka .label {
-  top: 53%;
 }
 
 .produkty_footer {
@@ -882,7 +875,8 @@ FOTO
   margin-top: 40px;
 }
 .akce_header {
- background-image: url(../img/akce/IMG_5239-Enhanced-NR-2.jpg);
+ background-image: url(../img/akce/expo_2.jpg);
+ background-position: bottom;
 }
 .contact_form .buttons {
   text-align: right;

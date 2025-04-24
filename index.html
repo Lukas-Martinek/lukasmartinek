@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
+    <div id="preloader">
+        <div class="loader"  id="loader"></div>
+        <img id="logo" src="./img/logo.png" alt="Lukáš Martínek logo" class="preloader-logo">
+      </div>
     <header>
         <div class="menu">
             <nav class="menu_part">
@@ -162,7 +166,7 @@
                     <h3>Choker</h3>
                     <p class="subtext">Milostný vzkaz pilotům</p>
                 </a>
-                <a href="./video/umelecka-video.html" class="proj_card" style="background-image: url('./img/nahledy/liberec_1.5.1.jpg');">
+                <a href="./video/umelecka-video.html#liberec" class="proj_card" style="background-image: url('./img/nahledy/liberec_1.5.1.jpg');">
                     <p class="label">video</p>
                     <div class="proj_image">
                     </div>
@@ -208,9 +212,39 @@
     <button class="scroll-to-top" onclick="scrollToTop()">
         ↑
     </button>
-    <script src="./js/loop.js"></script>
-    <script src="./js/video.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/loop.js"></script>
     <script src="./js/sipka.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+  // Zkontroluj, zda je animace už zobrazená v rámci aktuální session
+  if (!sessionStorage.getItem("preloaderShown")) {
+    const preloader = document.getElementById("preloader");
+    const loader = document.getElementById("loader");
+    const logo = document.getElementById("logo");
+
+    // Po 1.2s schovej kolečko a ukaž logo
+    setTimeout(() => {
+      loader.style.display = "none";
+      logo.style.opacity = "1";
+
+      // Po dalších 1.5s fadeout celého preloaderu
+      setTimeout(() => {
+        preloader.style.opacity = "0";
+        setTimeout(() => {
+          preloader.style.display = "none";
+        }, 800); // odpovídá délce fadeoutu
+      }, 1500);
+    }, 1200);
+
+    // Po zobrazení animace označ, že už byla zobrazená v aktuální session
+    sessionStorage.setItem("preloaderShown", "true");
+  } else {
+    // Pokud už byla animace zobrazená, hned skryj preloader
+    document.getElementById("preloader").style.display = "none";
+  }
+});
+      </script>
 </body>
 </html>
