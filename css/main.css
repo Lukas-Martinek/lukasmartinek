@@ -465,9 +465,9 @@ input, textarea {
 }
 .contact_form .button {
   font-size: 15px;
-
   margin: 0;
- align-self: flex-end;
+  align-self: flex-end;
+  border: 0;
 }
 .contact_form p {
   font-size: 18px;

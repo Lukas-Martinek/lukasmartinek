@@ -183,14 +183,14 @@
     <footer id="kontakt">
         <div class="contact_form">
             <div class="contact_form_part">
-                <form>
-                <input type="text" placeholder="Vaše jméno" required>
-                    <input type="email" placeholder="Váš e-mail" required>
-                <textarea placeholder="Zpráva pro mě..." required></textarea>
-                <div class="buttons">
-                    <a class="button" href="/foto.html">Odeslat</a>
-                  </div>
-            </form>
+                <form action="https://formspree.io/f/xnndpjpk" method="POST">
+                    <input type="text" name="name" placeholder="Vaše jméno" required>
+                    <input type="email" name="email" placeholder="Váš e-mail" required>
+                    <textarea name="message" placeholder="Zpráva pro mě..." required></textarea>
+                    <div class="buttons">
+                        <button type="submit" class="button">Odeslat</button>
+                    </div>
+                </form>
             </div>
              <div class="contact_form_part2">
         <h3>Pojďme spolu začít tvořit</h3>

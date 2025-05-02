@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video | Lukáš Martinek</title>
-<meta name="description" content="Tvořím reklamy a obsah na sociální sítě - od záběru po rozhovory. Dále osobní kreativní projekty">
+    <meta name="description" content="Tvořím reklamy a obsah na sociální sítě - od záběru po rozhovory. Dále osobní kreativní projekty">
+    <meta name="keywords" content="fotograf, videomaker, reklama, natáčení, tvorba obsahu, Liberec, Lukáš Martinek">
+    <meta name="author" content="Lukáš Martinek">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/media.css">
@@ -12,7 +14,6 @@
 <body>
     <div id="preloader">
         <div class="loader"  id="loader"></div>
-        <img id="logo" src="../img/logo.png" alt="Lukáš Martínek logo" class="preloader-logo">
       </div>
     <header class="video_header">
         <video autoplay muted loop playsinline>
@@ -118,33 +119,24 @@
     <script src="../js/video_pause.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-    // Zkontroluj, zda je animace už zobrazená v rámci aktuální session
-    if (!sessionStorage.getItem("preloaderShown")) {
-      const preloader = document.getElementById("preloader");
-      const loader = document.getElementById("loader");
-      const logo = document.getElementById("logo");
-  
-      // Po 1.2s schovej kolečko a ukaž logo
-      setTimeout(() => {
-        loader.style.display = "none";
-        logo.style.opacity = "1";
-  
-        // Po dalších 1.5s fadeout celého preloaderu
-        setTimeout(() => {
-          preloader.style.opacity = "0";
-          setTimeout(() => {
-            preloader.style.display = "none";
-          }, 800); // odpovídá délce fadeoutu
-        }, 1500);
-      }, 1200);
-  
-      // Po zobrazení animace označ, že už byla zobrazená v aktuální session
-      sessionStorage.setItem("preloaderShown", "true");
-    } else {
-      // Pokud už byla animace zobrazená, hned skryj preloader
-      document.getElementById("preloader").style.display = "none";
-    }
-  });
+          const pageKey = "preloaderShown_" + window.location.pathname;
+        
+          if (!sessionStorage.getItem(pageKey)) {
+            const preloader = document.getElementById("preloader");
+        
+            // Po 1.2s fadeout celého preloaderu
+            setTimeout(() => {
+              preloader.style.opacity = "0";
+              setTimeout(() => {
+                preloader.style.display = "none";
+              }, 600); // odpovídá délce fadeoutu
+            }, 1000);
+        
+            sessionStorage.setItem(pageKey, "true");
+          } else {
+            document.getElementById("preloader").style.display = "none";
+          }
+        });
         </script>
 </body>
 </html>
