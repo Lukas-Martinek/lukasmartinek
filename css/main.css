@@ -315,14 +315,14 @@ p {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 50%;
+  height: 30%;
   background: linear-gradient(to top, var(--modra), rgba(0, 0, 0, 0));
   z-index: 1;
   transition: opacity 0.3s ease-in-out;
 }
 
 .proj_card:hover::after {
-  opacity: 0.6;
+  height: 100%;
 }
 
 .proj_card * {
@@ -794,7 +794,7 @@ FOTO
   background-size: cover;
 }
 .produkty_header {
-  background-image: url(../img/nahledy/produkty.jpg);
+  background-image: url(../img/produkty/rooibos-nahled.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -828,6 +828,7 @@ FOTO
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .gallery-masonry a {
@@ -875,14 +876,14 @@ FOTO
   margin-top: 40px;
 }
 .akce_header {
- background-image: url(../img/akce/expo_2.jpg);
+ background-image: url(../img/akce/expo-2.jpg);
  background-position: bottom;
 }
 .contact_form .buttons {
   text-align: right;
 }
 .akce_footer {
-  background-image: url(../img/fitko/IMG_7468-Enhanced-NR-2.jpg);
+  background-image: url(../img/fitko/fitko-7.jpg);
 }
 
 .video_container {
@@ -1143,6 +1144,32 @@ FOTO
   font-weight: 900;
 }
 
+.grain-glow-text a {
+  color: var(--modra);
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease; /* Plynulá změna barvy */
+  font-weight: 900;
+}
+.grain-glow-text a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: var(--modra);
+  bottom: -5px;
+  left: 50%;
+  transition: width 0.3s ease, left 0.3s ease; /* Plynulý efekt podtržení */
+}
+.grain-glow-text a:hover {
+  color: var(--modra); /* Změna barvy při hoveru */
+}
+
+.grain-glow-text a:hover::after {
+  width: 100%; /* Podtržení zleva doprava */
+  left: 0; /* Vyrovnání na celou šířku */
+}
+
 .reklamy-container a::after {
   content: '';
   position: absolute;
@@ -1215,4 +1242,17 @@ border-radius: 10px;
   padding-bottom: 100px;
   padding-left: 20px;
   padding-right: 20px;
+}
+.fitko_header {
+  background-image: url(../img/fitko/fitko-6.jpg);
+}
+.fitko_footer {
+  
+  background-image: url(../img/fitko/fitko-7.jpg);
+}
+.expo_header {
+  background-image: url(../img/akce/expo-6.jpg);
+}
+.expo_footer {
+  background-image: url(../img/akce/expo-10.jpg);
 }
