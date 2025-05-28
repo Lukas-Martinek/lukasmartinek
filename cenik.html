@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceník | Lukáš Martinek</title>
+<meta name="description" content="Kvalitní produktové fotky, které prodávají, ať už je produkt jakýkoliv">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link href="../css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <header class="produkty_header">
+        <div class="menu">
+            <nav class="menu_part">
+                <a href="./">Foto</a>
+                <a href="../video/">Video</a>
+            </nav>
+        
+            <div class="logo">
+                <a href="/"><img src="../img/logo.png" alt="Logo"></a>
+            </div>
+        
+            <nav class="menu_part">
+                <a href="../#o_mne">O mně</a>
+                <a href="../#kontakt">Kontakt</a>
+            </nav>
+        </div>
+        
+        <!-- MOBILNÍ HEADER (Logo + Hamburger) -->
+        <div class="mobile-header">
+            <div class="logo">
+                <a href="/"><img src="../img/logo.png" alt="Logo"></a>
+            </div>
+            <div class="menu-toggle" onclick="toggleMobileMenu()">
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="close">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- MOBILNÍ MENU (Zavřené defaultně) -->
+        <div class="mobile-menu" id="mobileMenu">
+            <nav>
+                <a href="./">Foto</a>
+                <a href="../video/">Video</a>
+                <a href="../#o_mne">O mně</a>
+                <a href="../#kontakt">Kontakt</a>
+            </nav>
+        </div>
+            <h1>Ceník</h1>
+        </div>
+    </header>
+    <main>
+       <table id="example" class="display">
+    <thead>
+        <tr>
+            <th>Typ focení</th>
+            <th>Odhad počtu fotek</th>
+            <th>Cena</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Portrétní focení</td>
+            <td>30–50</td>
+            <td>2 500 Kč</td>
+        </tr>
+        <tr>
+            <td>Produktové focení</td>
+            <td>15–30</td>
+            <td>3 000 Kč</td>
+        </tr>
+        <tr>
+            <td>Event / konference</td>
+            <td>100–300</td>
+            <td>od 5 000 Kč</td>
+        </tr>
+        <tr>
+            <td>Sportovní akce</td>
+            <td>200–500</td>
+            <td>od 6 000 Kč</td>
+        </tr>
+        <tr>
+            <td>Reklamní focení</td>
+            <td>20–40</td>
+            <td>dle dohody</td>
+        </tr>
+    </tbody>
+</table>
+
+        
+    </main>
+    <footer id="kontakt" class="foto_footer produkty_footer">
+        <div class="footer_info">
+            <div class="footer_info_1">
+            <h3>Lukáš Martinek</h3>
+                    <ul>
+                        <li><a href="">info@lukasmartinek.cz</a></li>
+                        <li><a href="">603 174 097</a></li>
+                        <li><p class="ico">IČO: 23079673</p></li>
+                        <li><p class="copy">2025 Lukáš Martinek. Všechna práva vyhrazena.</p></p></li>
+                    </ul> 
+            </div>
+            <div class="footer_info_2">
+                <img src="../img/logo.png">
+            </div>
+        </div>
+    </footer>
+    <button class="scroll-to-top" onclick="scrollToTop()">
+        ↑
+    </button>
+    <script src="../js/masonry.js"></script>
+    <script src="../js/imagesloaded.js"></script>
+    <script src="../js/loop.js"></script>
+    <script src="../js/video.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/sipka.js"></script>.
+    <script src="../js/mobile_active.js"></script>
+    <script src="../js/lightbox-plus-jquery.js"></script>
+
+    <script>
+       const grid = document.querySelector('.gallery-masonry');
+
+const msnry = new Masonry(grid, {
+  itemSelector: 'a', // protože každá fotka je v <a>
+  percentPosition: true
+});
+
+imagesLoaded(grid).on('progress', function () {
+  msnry.layout();
+}); </script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $('#example').DataTable({
+      language: {
+        url: '//cdn.datatables.net/plug-ins/1.13.6/i18n/cs.json'
+      }
+    });
+  });
+</script>
+
+
+</body>
+</html>

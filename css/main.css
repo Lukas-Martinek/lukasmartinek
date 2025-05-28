@@ -1144,14 +1144,14 @@ FOTO
   font-weight: 900;
 }
 
-.grain-glow-text a {
+.grain-glow-text p a {
   color: var(--modra);
   text-decoration: none;
   position: relative;
   transition: color 0.3s ease; /* Plynulá změna barvy */
   font-weight: 900;
 }
-.grain-glow-text a::after {
+.grain-glow-text p a::after {
   content: '';
   position: absolute;
   width: 0;
@@ -1161,11 +1161,11 @@ FOTO
   left: 50%;
   transition: width 0.3s ease, left 0.3s ease; /* Plynulý efekt podtržení */
 }
-.grain-glow-text a:hover {
+.grain-glow-text p a:hover {
   color: var(--modra); /* Změna barvy při hoveru */
 }
 
-.grain-glow-text a:hover::after {
+.grain-glow-text p a:hover::after {
   width: 100%; /* Podtržení zleva doprava */
   left: 0; /* Vyrovnání na celou šířku */
 }
