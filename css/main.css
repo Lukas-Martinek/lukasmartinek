@@ -761,7 +761,7 @@ FOTO
   margin-bottom: 0;
 }
 .produkty {
-  background-image: url(../img/nahledy/IMG_4067-2.jpg);
+  background-image: url(../img/nahledy/produkty.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -1200,7 +1200,7 @@ FOTO
 }
 
 .produkty_header h1, .akce_header h1, .portrety_header h1, .umelecka_header h1 {
-  padding-bottom: 140px;
+  padding-bottom: 240px;
 }
 .kytka_header {
   background-image: url(../img/produkty/kytka_header.jpg);
