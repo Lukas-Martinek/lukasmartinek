@@ -54,6 +54,13 @@
         padding-top: 100px;
         
       }
+
+      .produkty_header h1, .akce_header h1, .portrety_header h1, .umelecka_header h1 {
+        padding-bottom: 150px;
+      }
+      .video_header {
+        padding-bottom: 100px;
+      }
       .claim {
         font-size: 30px;
         
@@ -227,4 +234,13 @@
 .reklama-content {
   padding-left: 120px;
 }
+}
+
+@media screen and (min-width: 1500px) {
+.foto_part {
+    padding-top: 300px;
+    padding-bottom: 300px;
+
+
+ }
 }
