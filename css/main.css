@@ -1063,7 +1063,7 @@ FOTO
   max-width: 900px;
   margin: 0 auto;
   padding-top: 20px;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -1256,4 +1256,53 @@ border-radius: 10px;
 }
 .expo_footer {
   background-image: url(../img/akce/expo-10.jpg);
+}
+
+.special h3 {
+  color: var(--modra);
+  margin-bottom: 0px;
+}
+.special {
+   box-shadow: none;
+}
+.proj_card.special::after {
+  display: none;
+}
+.special p{
+  color: var(--modra);
+  font-size: 20px;
+  font-weight: 400;
+}
+.special {
+  justify-content: center;
+}
+.special:hover {
+background-color: #337A8D;
+transition: all ease-in-out 0.3s;
+}
+.special:hover h3{
+  color: white;
+  transition: all ease-in-out 0.3s;
+
+}
+.special:hover p {
+  color: white;
+  transition: all ease-in-out 0.3s;
+}
+.video_header .button {
+  position: relative;
+  z-index: 30;
+  font-size: 20px;
+  max-width: 300px;
+  width: 50%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.claim_2 {
+  font-weight: 300;
+  font-size: 30px;
+}
+.projekty_header {
+  padding-bottom: 250px;
 }

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukáš Martinek - Fotograf a videomaker z Liberce</title>
+<meta name="description" content="Jsem Lukáš Martinek – fotograf a videomaker z Liberce. Věnuji se 
+        produktové, portrétní, eventové i umělecké tvorbě. Mrkni na moje portfolio.">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="projekty_header">
+        <div class="menu">
+            <nav class="menu_part">
+                <a href="foto/">Foto</a>
+                <a href="video/">Video</a>
+            </nav>
+        
+            <div class="logo">
+                <a href="/"><img src="img/logo.png" alt="Logo"></a>
+            </div>
+        
+            <nav class="menu_part">
+                <a href="/#o_mne">O mně</a>
+                <a href="/#kontakt">Kontakt</a>
+            </nav>
+        </div>
+        
+        <!-- MOBILNÍ HEADER (Logo + Hamburger) -->
+        <div class="mobile-header">
+            <div class="logo">
+                <a href="/"><img src="./img/logo.png" alt="Logo"></a>
+            </div>
+            <div class="menu-toggle" onclick="toggleMobileMenu()">
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="close">
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- MOBILNÍ MENU (Zavřené defaultně) -->
+        <div class="mobile-menu" id="mobileMenu">
+            <nav>
+                <a href="foto/">Foto</a>
+                <a href="video/">Video</a>
+                <a href="/#o_mne">O mně</a>
+                <a href="/#kontakt">Kontakt</a>
+            </nav>
+        </div>
+            <h1>Projekty</h1>
+            <p class=" claim claim_2">Výběr projektů</p>
+           
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="proj_container">
+                
+                    <div>
+                        <h2>FOTO</h2>
+                        <p class="proj_podnadpis">Věnuji se produktovému focení, focení akcí, portrétům a také vlastní umělecké tvorbě. Více na
+                            <a href="./foto/">foto</a>.
+                        </p>
+                    </div>
+                
+                <a href="./foto/redko.html" class="proj_card" style="background-image: url('./img/produkty/rooibos-25.jpg');">
+                    <p class="label">foto - produkty</p>
+                    <div class="proj_image">
+                    </div>
+                    <h3>REDKO</h3>
+                    <p class="subtext">Čaj, který hraje podle pravidel kávy</p>
+                </a>
+                <a href="./foto/profitko.html" class="proj_card" style="background-image: url('./img/fitko/titulka.jpg');">
+                    <p class="label">foto - akce</p>
+                    <div class="proj_image">
+                    </div>
+                    <h3>Profitko</h3>
+                    <p class="subtext">Fitko, kde se cítíš jako doma</p>
+                </a>
+                <a href="./foto/rooibos.html" class="proj_card" style="background-image: url('./img/produkty/rooibos-12.jpg');">
+                    <p class="label">foto, video</p>
+                    <div class="proj_image">
+                    </div>
+                    <h3>ROOIBOS</h3>
+                    <p class="subtext">Africká fermentovaná limonáda</p>
+                </a>
+                <a href="./foto/places.html" class="proj_card" style="background-image: url('./img/akce/places-1.jpg');">
+                    <p class="label">foto, video</p>
+                    <div class="proj_image">
+                    </div>
+                    <h3>PLACES</h3>
+                    <p class="subtext">Focení venkovního DJ setu</p>
+                </a>
+                
+                <a href="./foto/expo.html" class="proj_card" style="background-image: url('./img/akce/expo-15.jpg');">
+                    <p class="label">foto - akce</p>
+                    <div class="proj_image">
+                    </div>
+                    <h3>Base expo</h3>
+                    <p class="subtext">Marketplace summit</p>
+                </a>
+            </div>
+    
+
+            <div class="proj_container">
+                
+                    <div>
+                        <h2>VIDEO</h2>
+                        <p class="proj_podnadpis">Poslední projekty, na kterých jsem pracoval. Pro podrobnější rozdělení lze jít na 
+                            <a href="./foto/">foto</a> a <a href="./video/">video</a>.
+                        </p>
+                    </div>
+                
+                <a href="./video/reklamy.html#showreel" class="proj_card" style="background-image: url('./img/showreel_1.1.1.jpg');">
+                    <p class="label">video</p>
+                    <div class="proj_image">
+                    </div>
+                    <h3>SHOWREEL</h3>
+                    <p class="subtext">Co jsem dělal poslední půl rok</p>
+                </a>
+               <a href="https://www.instagram.com/p/DGnimoDt52Q/" target="_blank" rel="noopener noreferrer" class="proj_card" style="background-image: url('./img/krassa/nahled_hojda_3.1.1.jpg');">
+                    <p class="label">video - reklama</p>
+                    <div class="proj_image">
+                    </div>
+                    <h3>Chef Hojda</h3>
+                    <p class="subtext">Šéfkuchař národního kalibru</p>
+                </a>
+                
+                <a href="./foto/places.html" class="proj_card" style="background-image: url('./img/titulka_places.jpg');">
+                    <p class="label">video - záznam akce</p>
+                    <div class="proj_image">
+                    </div>
+                    <h3>PLACES</h3>
+                    <p class="subtext">PAINT THE SET RED - videoanimace</p>
+                </a>
+                <a href="https://www.instagram.com/reel/DCrFQMvAnSe/" target="_blank" rel="noopener noreferrer" class="proj_card" style="background-image: url('./img/bistro/bistro-nahled.jpg');">
+                    <p class="label">video - reklama</p>
+                    <div class="proj_image">
+                    </div>
+                    <h3>BISTRO 149</h3>
+                    <p class="subtext">Šéfkuchař národního kalibru</p>
+                </a>
+                <a href="./video/umelecka-video.html#choker" class="proj_card" style="background-image: url('./img/choker/3_ig.jpg');">
+                    <p class="label">video - vlastní tvorba</p>
+                    <div class="proj_image">
+                    </div>
+                    <h3>Choker</h3>
+                    <p class="subtext">Milostný vzkaz pilotům</p>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer id="kontakt">
+        <div class="contact_form">
+            <div class="contact_form_part">
+                <form action="https://formspree.io/f/xnndpjpk" method="POST">
+                    <input type="text" name="name" placeholder="Vaše jméno" required>
+                    <input type="email" name="email" placeholder="Váš e-mail" required>
+                    <textarea name="message" placeholder="Zpráva pro mě..." required></textarea>
+                    <div class="buttons">
+                        <button type="submit" class="button">Odeslat</button>
+                    </div>
+                </form>
+            </div>
+             <div class="contact_form_part2">
+        <h3>Pojďme spolu začít tvořit</h3>
+        <p>Pro více informací se mi můžete ozvat na <strong>info@lukasmartinek.cz</strong> nebo vyplňte formulář</p>
+            </div>
+        </div>
+        <div class="footer_info">
+            <div class="footer_info_1">
+            <h3>Lukáš Martinek</h3>
+                    <ul>
+                        <a href="mailto:info@lukasmartinek.cz">info@lukasmartinek.cz</a>
+                        <li><a href="">603 174 097</a></li>
+                        <li><p class="ico">IČO: 23079673</p></li>
+                        <li><p class="copy">2025 Lukáš Martinek. Všechna práva vyhrazena.</p></p></li>
+                    </ul> 
+            </div>
+            <div class="footer_info_2">
+                <img src="./img/logo.png">
+            </div>
+        </div>
+    </footer>
+    <button class="scroll-to-top" onclick="scrollToTop()">
+        ↑
+    </button>
+    <script src="./js/menu.js"></script>
+    <script src="./js/loop.js"></script>
+    <script src="./js/sipka.js"></script>
+
+</body>
+</html>
